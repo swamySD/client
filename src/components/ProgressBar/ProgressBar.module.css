@@ -1,0 +1,16 @@
+.progress{
+    font-family: sans-serif;
+    height: 40px;
+    width: 500px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    background-color: rgb(106, 244, 106);
+}
+.value{
+    position: absolute;
+    color: aqua;
+}

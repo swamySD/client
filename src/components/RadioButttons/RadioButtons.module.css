@@ -1,0 +1,23 @@
+/* RadioButtons.module.css */
+
+.gamecontainer {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5; /* Set the background color for the container */
+  }
+  
+  .label {
+    margin-right: 10px;
+  }
+  
+  .input {
+    margin-right: 5px;
+    background-color: #fff; /* Set the background color for unselected radio buttons */
+  }
+  
+  .input:checked:hover{
+    accent-color:red; 
+   /* Set the background color for selected radio button */
+  }
+  
