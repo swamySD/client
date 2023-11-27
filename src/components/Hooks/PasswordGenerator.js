@@ -14,7 +14,7 @@ const PasswordGenerator = () => {
         let str="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
         if(numberAllowed) str+="0123456789"
         if(charAllowed) str+="!@#$%^&*()-_=+[]{}|;:'\",.<>/?"
-        for(let i=1; i<length;i++){
+        for(let i=0; i<length;i++){
             const char=Math.floor(Math.random()*str.length+1)
             pass+=str.charAt(char)
         }
@@ -28,6 +28,7 @@ const PasswordGenerator = () => {
    },[length,numberAllowed,charAllowed])
 
    const copyToClipboard=()=>{
+    window.navigator.clipboard.writeText(password)
    console.log( window.navigator.clipboard.writeText(password))
    passwordRef.current?.select()
    }
